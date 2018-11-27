@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [{
+      "label": "build & debug file",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "-o",
+        "trab3",
+        "key.c",
+        "encrypt.c"
+
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "build & run file",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-o",
+        "trab3",
+        "key.c",
+        "encrypt.c"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
